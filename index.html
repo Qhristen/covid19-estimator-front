@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Build for SDGs</title>
+</head>
+<body>
+    <nav class="c-nav">
+        <h1>Build for SDGs</h1>
+    </nav>
+    <main>
+        <di class="result"></di>
+        <form action="" class="form">
+                <section class="form-section">
+                        <div class="form-input">
+                            <label for="regionName">Region Name</label>
+                            <input type="text" name="regionName" placeholder="Eg: Africa" data-region-name required>
+                        </div>
+                        <div class="form-input">
+                                <label for="avgAge">Average Age</label>
+                                <input type="text" name="avgAge" placeholder="Population" data-region-avgAge required>
+                            </div>
+                            <div class="form-input">
+                                    <label for="AverageDailyIncomeInUSD">Average Daily Income In USD</label>
+                                    <input type="text" name="AverageDailyIncomeInUSD" placeholder="Population" data-region-avgDailyIncomeInUSD required>
+                                </div>
+                                <div class="form-input">
+                                        <label for="avgD">Percentage Average Daily Income</label>
+                                        <input type="text" name="avgD" placeholder="Percentage..." data-region-avgDailyIncomePopulation required>
+                                    </div>
+                    </section>
+            <section class="form-section">
+                <div class="form-input">
+                    <label for="population">Population</label>
+                    <input type="number" name="population" placeholder="Population" data-population required>
+                </div>
+                <div class="form-input">
+                        <label for="TimeElapse">Time Elapse</label>
+                        <input type="number" name="TimeElapse" placeholder="Time Elapse" data-time-to-elapse required>
+                    </div>
+                    <div class="form-input">
+                            <label for="reportedCases">Reported Cases</label>
+                            <input type="number" name="reportedCases" placeholder="Reported Cases" data-reported-cases required>
+                        </div>
+            </section>
+            <section class="form-section">
+                    <div class="form-input">
+                        <label for="totalHospitalBeds">Number of Hospital Beds</label>
+                        <input type="number" name="totalHospitalBeds" placeholder="Population" data-total-hospital-beds required>
+                    </div>
+                    <div class="form-input">
+                            <label for="periodType">Period Type</label>
+                            <select name="periodType" id="periodType" data-period-type>
+                              <option value="days">days</option>
+                              <option value="weeks">weeks</option>
+                              <option value="months">months</option>
+                            </select>
+                        </div>
+                        <div class="form-input">
+                                <button data-go-estimate>Submit</button>
+                            </div>
+                </section>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
