@@ -29,5 +29,4 @@ form,addEventListener('submit', (e) => {
     const result = document.querySelector('.result');
     result.innerHTML = `${data.region.name}, ${data.periodType}, ${data.population}`;
     result.style.display = "flex";
-    result.focus();
 });
