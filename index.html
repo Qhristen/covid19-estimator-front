@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Description" content="covid19-impact Estimator">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" rel="preload" as="style"  href="styles.css">
-    <link rel="stylesheet" rel="preload" as="style"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    <link rel="stylesheet" rel="preload" as="style" href="styles.css">
+    <link rel="stylesheet" rel="preload" as="style"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Build for SDGs</title>
 </head>
@@ -20,101 +21,94 @@
     </nav>
 
     <div class="container">
-     <h1 class="res">Covid-19 Estimator</h1>
-     
-
-            <div class="jumbotron">
-                <!-- <section class="form-section"> -->
-                    <form class="form">
-                        <div class="form-group">
-                            <label for="regionName">Region Name</label>
-                            <input type="text" name="regionName" class="form-control" id="regionName"
-                                placeholder="Eg: Africa" data-region-name required>
-                        </div>
-                        <div class="form-group">
-                            <label for="avgAge">Average Age</label>
-                            <input type="text" name="regionName" class="form-control" id="avgAge" name="avgAge"
-                                placeholder="Population" data-region-avgAge required>
-                        </div>
-                        <div class="form-group">
-                            <label for="AverageDailyIncomeInUSD">Average Daily Income In USD</label>
-                            <input type="text" name="AverageDailyIncomeInUSD" class="form-control"
-                                id="AverageDailyIncomeInUSD" name="AverageDailyIncomeInUSD" placeholder="Population"
-                                data-region-avgDailyIncomeInUSD required>
-                        </div>
-                        <div class="form-group">
-                            <label for="avgD">Percentage Average Daily Income</label>
-                            <input type="text" name="avgD" class="form-control" id="avgD"
-                                name="AverageDailyIncomeInUSD" placeholder="Percentage..."
-                                data-region-avgDailyIncomePopulation required>
-                        </div>
-                        <div class="form-group">
-                            <label for="population">Population</label>
-                            <input type="number" name="population" class="form-control" id="population"
-                                name="AverageDailyIncomeInUSD" placeholder="Population" data-population required>
-                        </div>
-                        <div class="form-group">
-                            <label for="TimeElapse">Time Elapse</label>
-                            <input type="number" name="TimeElapse" class="form-control" id="TimeElaspse" placeholder="Time Elapse" data-time-to-elapse required>
-                        </div>
-                        <div class="form-group">
-                            <label for="reportedCases">Reported Cases</label>
-                            <input type="number" name="reportedCases" id="reportedCases" class="form-control"
-                                placeholder="Reported Cases" data-reported-cases required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="totalHospitalBeds">Number of Hospital Beds</label>
-                            <input type="number" id="totalHospitalBeds" name="totalHospitalBeds" class="form-control" placeholder="Population"
-                                data-total-hospital-beds required>
-                        </div>
-                        <div class="form-group">
-                        <label for="periodType">Period Type</label>
-                        <select name="periodType" class="form-control" id="periodType" data-period-type>
-                            <option value="days">days</option>
-                            <option value="weeks">weeks</option>
-                            <option value="months">months</option>
-                        </select>
-                        </div>
-                        <button data-go-estimate data-toggle="modal" data-target="#exampleModalScrollable" type="submit" class="btn btn-primary mt-4">Submit</button>
+        <h1 class="res">Covid-19 Estimator</h1>
 
 
+        <div class="jumbotron">
+            <!-- <section class="form-section"> -->
+            <form class="form">
+                <div class="form-group">
+                    <label for="regionName">Region Name</label>
+                    <input type="text" name="regionName" class="form-control" id="regionName" placeholder="Eg: Africa"
+                        data-region-name required>
+                </div>
+                <div class="form-group">
+                    <label for="avgAge">Average Age</label>
+                    <input type="text" name="regionName" class="form-control" id="avgAge" name="avgAge"
+                        placeholder="Population" data-region-avgAge required>
+                </div>
+                <div class="form-group">
+                    <label for="AverageDailyIncomeInUSD">Average Daily Income In USD</label>
+                    <input type="text" name="AverageDailyIncomeInUSD" class="form-control" id="AverageDailyIncomeInUSD"
+                        name="AverageDailyIncomeInUSD" placeholder="Population" data-region-avgDailyIncomeInUSD
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="avgD">Percentage Average Daily Income</label>
+                    <input type="text" name="avgD" class="form-control" id="avgD" name="AverageDailyIncomeInUSD"
+                        placeholder="Percentage..." data-region-avgDailyIncomePopulation required>
+                </div>
+                <div class="form-group">
+                    <label for="population">Population</label>
+                    <input type="number" name="population" class="form-control" id="population"
+                        name="AverageDailyIncomeInUSD" placeholder="Population" data-population required>
+                </div>
+                <div class="form-group">
+                    <label for="TimeElapse">Time Elapse</label>
+                    <input type="number" name="TimeElapse" class="form-control" id="TimeElaspse"
+                        placeholder="Time Elapse" data-time-to-elapse required>
+                </div>
+                <div class="form-group">
+                    <label for="reportedCases">Reported Cases</label>
+                    <input type="number" name="reportedCases" id="reportedCases" class="form-control"
+                        placeholder="Reported Cases" data-reported-cases required>
+                </div>
 
+                <div class="form-group">
+                    <label for="totalHospitalBeds">Number of Hospital Beds</label>
+                    <input type="number" id="totalHospitalBeds" name="totalHospitalBeds" class="form-control"
+                        placeholder="Population" data-total-hospital-beds required>
+                </div>
+                <div class="form-group">
+                    <label for="periodType">Period Type</label>
+                    <select name="periodType" class="form-control" id="periodType" data-period-type>
+                        <option value="days">days</option>
+                        <option value="weeks">weeks</option>
+                        <option value="months">months</option>
+                    </select>
+                </div>
+                <button data-go-estimate data-toggle="modal" data-target="#exampleModalScrollable" type="submit"
+                    class="btn btn-primary mt-4">Submit</button>
 
-                    </form>
-
-                    <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalScrollable">
-    Launch demo modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-                <!-- </section> -->
+            </form>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalScrollableTitle">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="result"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
 
-    
+
+            <!-- </section> -->
+        </div>
+    </div>
+
+
     </div>
 
 
