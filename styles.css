@@ -6,91 +6,10 @@ body{
     background: #000000;
 }
 
-nav{
-    position: fixed;
-    width: 100%;
-    padding: 10px;
-    top: 0;
-    background: rgb(0, 119, 155);
-    box-shadow: 0px 0px 2px black;
-    vertical-align: middle;
-}
-nav h1{
-    font-weight: bolder;
-    color: rgb(255, 255, 255);
-    display: inline;
-    padding-left: 10px;
-
-}
-
-nav img{
-    margin-top: 15px;
-    margin-left: 30px;
-}
-
-/* .result{
-    background: rgb(134, 134, 134);
-    width: 100%;
-    margin: auto;
-    padding: 20px;
-    display: none;
-} */
-
-
-
-
-.form-input input{
-    width: 300px;
-    height: 50px;
-    border-radius: 0.5rem;
-    padding-left: 18px;
-    padding-right: 10px;
-    font-size: 18px;
-    font-weight: lighter;
-    border: none;
-    margin-bottom: 10px;
-}
-.form-input select{
-    width: 300px;
-    height: 50px;
-    border-radius: 0.5rem;
-    padding-left: 18px;
-    padding-right: 10px;
-    font-size: 18px;
-    font-weight: lighter;
-    border: none;
-    margin-bottom: 10px;
-}
-
 .form-group label{
     color: #000000;
 }
 
-
-
-.form-input button{
-    width: 300px;
-    height: 50px;
-    border-radius: 0.5rem;
-    background: rgb(0, 119, 155);
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: lighter;
-    color: wheat;
-    border: none;
-    margin-top: 26px;
-}
-.form-input button:hover{
-    background: rgb(0, 48, 63);
-}
-
-.form-section{
-    border-left: 2px solid #d1d1d1;
-    padding-top: 36px;
-    margin-bottom: 30px;
-    margin-right: 30px;
-    padding-left: 10px;
-}
 .form{
     display: grid;
     align-items: center;
@@ -109,14 +28,6 @@ nav img{
     text-align: center;
     font-weight: bolder;
 }
-/* .form-section label{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16;
-    font-weight: 600;
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
-} */
 
 @media (max-width: 768px) {
     .res{
