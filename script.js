@@ -1,6 +1,10 @@
 
 const form = document.querySelector('.form');
 
+$('#exampleModalScrollable').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus')
+  });
+
 form,addEventListener('submit', (e) => {
     e.preventDefault();
     const population = document.querySelector('input[data-population]').value;
