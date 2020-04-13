@@ -3,7 +3,7 @@ body{
     padding: 0;
     background-color: black;
     font-family: 'Trebuchet MS';
-    background: #000000;
+  
 }
 
 .form-group label{
@@ -28,7 +28,13 @@ body{
     text-align: center;
     font-weight: bolder;
 }
-
+.btnn{
+    color: #fff;
+    background: rgb(0, 23, 71);
+    padding: 10px;
+    border-radius: 1rem;
+    border: none;
+}
 @media (max-width: 768px) {
     .res{
         padding: 20px;
